@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bingo Digital</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="/images/header.jpg" alt="Imagem do Evento" />
+    <h1><b>Bingo Digital</b></h1>
+  </header>
+
+  <div class="container">
+    <div id="globo" class="globo">
+      <h2>Clique para Sortear</h2>
+      <div id="numeroAtualContainer">
+        <div id="numeroAtual">-</div>
+      </div>
+      <button onclick="sortearNumero()" id="btnSortear" disabled>Sortear</button>
+    </div>
+
+    <div class="sorteados">
+      <div class="sorteados-header">
+        <h3>Números Sorteados:</h3>
+        <button onclick="iniciarSorteio()" id="btnIniciar">Novo Sorteio</button>
+      </div>
+      <ul id="listaSorteados"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
