@@ -3,11 +3,11 @@ let numeroAtual = null;
 
 // Função para iniciar o sorteio
 function iniciarSorteio() {
-  const qtd = prompt("Quantos números você deseja sortear? (Padrão: 90)");
+  const qtd = prompt("Quantos números você deseja sortear? (Padrão: 75)");
   let quantidade = parseInt(qtd);
 
   if (!quantidade || quantidade <= 0 || isNaN(quantidade)) {
-    quantidade = 90; // Padrão
+    quantidade = 75; // Padrão
   }
 
   // Reinicia
